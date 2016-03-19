@@ -2,6 +2,19 @@
 set foldmethod=indent
 set foldlevel=99
 
+"python-mode
+let g:pymod_run=1
+let g:pymode_folding=1
+let g:pymode_options=1
+let g:pymode_syntax=1
+let g:pymode_syntax_all=1
+let g:pymode_syntax_slow_sync=1
+let g:pymode_trim_whitespaces=1
+let g:pymode_lint=1
+let g:pymode_doc=1
+let g:pymode_rope=1
+let g:pymode_rope_lookup_project = 0
+
 " enable folding with space
 nnoremap <space> za
 
