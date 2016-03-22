@@ -1,1 +1,4 @@
 Plugin 'moll/vim-node'
+
+" YouCompleteMe: build with --tern-completer and --clang-completer
+Plugin 'Valloric/YouCompleteMe'
