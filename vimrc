@@ -14,6 +14,7 @@ let g:pymode_lint=1
 let g:pymode_doc=1
 let g:pymode_rope=1
 let g:pymode_rope_lookup_project = 0
+autocmd BufRead *.py setlocal colorcolumn=0
 
 " enable folding with space
 nnoremap <space> za
