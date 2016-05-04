@@ -32,3 +32,9 @@ au BufNewFile,BufRead *.py
 
 " highlight
 let python_highlight_all=1
+
+" vim-test
+let test#python#runner='nose'
+
+"Testing
+nmap <silent> <leader>t :TestNearest<CR>
