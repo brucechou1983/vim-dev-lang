@@ -3,18 +3,16 @@ set foldmethod=indent
 set foldlevel=99
 
 "python-mode
-let g:pymod_run=1
-let g:pymode_folding=1
-let g:pymode_options=1
+let g:pymode_doc_vertical=1
 let g:pymode_syntax=1
 let g:pymode_syntax_all=1
 let g:pymode_syntax_slow_sync=1
-let g:pymode_trim_whitespaces=1
-let g:pymode_lint=1
-let g:pymode_doc=1
+let pymode_lint_on_write=0
 let g:pymode_rope=1
-let g:pymode_rope_lookup_project = 0
 autocmd BufRead *.py setlocal colorcolumn=0
+set completeopt=longest,menu
+""auto pep8
+nnoremap <leader>l :PymodeLintAuto<CR> 
 
 " enable folding with space
 nnoremap <space> za
