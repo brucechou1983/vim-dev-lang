@@ -1,4 +1,9 @@
+" node
 Plugin 'moll/vim-node'
 
 " YouCompleteMe: build with --tern-completer and --clang-completer
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
+
+" react
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
