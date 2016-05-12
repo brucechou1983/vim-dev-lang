@@ -1,8 +1,11 @@
 " node
 Plugin 'moll/vim-node'
 
-" YouCompleteMe: build with --tern-completer and --clang-completer
-" Plugin 'Valloric/YouCompleteMe'
+" install dependencies with: npm install 
+Plugin 'marijnh/tern_for_vim'
+
+" build YouCompleteMe with: install.py --clang-completer --tern-completer
+Plugin 'Valloric/YouCompleteMe'
 
 " react
 Plugin 'pangloss/vim-javascript'
