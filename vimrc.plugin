@@ -2,11 +2,17 @@
 Plugin 'moll/vim-node'
 
 " install dependencies with: npm install 
-Plugin 'marijnh/tern_for_vim'
+" Plugin 'marijnh/tern_for_vim'
 
 " build YouCompleteMe with: install.py --clang-completer --tern-completer
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 " react
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+
+" html
+Plugin 'alvan/vim-closetag'
+
+" autoformatting (needs: npm install -g esformatter, esformatter-jsx)
+Plugin 'millermedeiros/vim-esformatter'
