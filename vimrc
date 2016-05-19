@@ -14,3 +14,8 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js"
 "esformatter
 nnoremap <silent> <leader>l :Esformatter<CR>
 vnoremap <silent> <leader>l :EsformatterVisual<CR>
+
+"default indent 4=>2
+set tabstop=2
+set shiftwidth=2
+
