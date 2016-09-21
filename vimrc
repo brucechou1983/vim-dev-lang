@@ -2,17 +2,19 @@
 set foldmethod=indent
 set foldlevel=99
 
+"yapf formatter
+autocmd FileType python nnoremap <leader>l :0,$!yapf<CR>
+
 "python-mode
 let g:pymode_doc_vertical=1
 let g:pymode_syntax=1
 let g:pymode_syntax_all=1
 let g:pymode_syntax_slow_sync=1
-let pymode_lint_on_write=0
+let pymode_lint_on_write=1
 let g:pymode_rope=1
+autocmd FileType python nnoremap <leader>s :PymodeLint<CR>
 autocmd BufRead *.py setlocal colorcolumn=0
 set completeopt=longest,menu
-""auto pep8
-nnoremap <leader>l :PymodeLintAuto<CR> 
 
 " enable folding with space
 nnoremap <space> za
@@ -21,7 +23,7 @@ nnoremap <space> za
 let g:SimpylFold_docstring_preview=1
 
 " PEP8 indentation
-au BufNewFile,BufRead *.py
+autocmd BufNewFile,BufRead *.py
     \set tabstop=4
     \set softtabstop=4
     \set shiftwidth=4
