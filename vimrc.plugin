@@ -1,1 +1,1 @@
-Plugin 'klen/python-mode'
+Plugin 'nvie/vim-flake8'
